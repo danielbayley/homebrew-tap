@@ -1,0 +1,22 @@
+name: CI
+on:
+  push:
+    branches: [main]
+    paths: #['**/*.rb']
+    - Formula/*.rb
+    - Casks/*.rb
+    - cmd/*rb
+    - lib/*rb
+  #pull_request: TODO
+
+jobs:
+  CI:
+    runs-on: macos-latest
+    steps:
+    - name: Homebrew tap ${{github.workflow}}
+      uses: danielbayley/homebrew-tap-ci-action@main #v1 FIXME
+      #env:
+        #GITHUB_TOKEN: ${{secrets.PERSONAL_ACCESS_TOKEN}}
+      #with:
+        #github_token: ${{secrets.PERSONAL_ACCESS_TOKEN}}
+        #TODO: '{Formula,Casks}/*.rb'
