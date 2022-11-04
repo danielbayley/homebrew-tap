@@ -14,4 +14,4 @@ on:
 
 jobs:
   CI:
-    uses: danielbayley/homebrew-pipeline/.github/workflows/homebrew-ci.yml@$default-branch
+    uses: danielbayley/homebrew-pipeline/.github/workflows/action.yml@$default-branch
