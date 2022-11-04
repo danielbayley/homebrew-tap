@@ -2,7 +2,7 @@ cask "testy" do
   version :latest
   sha256 :no_check
   
-  branch = "main"
+  branch = "main" # comment
   url "https://github.com/danielbayley/homebrew-tap/archive/refs/heads/#{branch}.zip"
   name "Testy"
   desc "Testing"
