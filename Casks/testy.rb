@@ -3,7 +3,7 @@ cask "testy" do
   sha256 :no_check
 
   owner = ENV["TOP_SECRET"]
-  p "owner: #{owner}" # comment
+  p "owner: #{owner}"
 
   branch = "main"
   url "https://github.com/#{owner}/homebrew-tap/archive/refs/heads/#{branch}.zip"
