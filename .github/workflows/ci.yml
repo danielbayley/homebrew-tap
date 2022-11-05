@@ -18,3 +18,7 @@ jobs:
     secrets: inherit
     with:
       skip-install: cask,tokens
+    
+    steps:
+    - name: Additional TEST step
+      run: echo HOMEBREW_USER: ${{ secrets.HOMEBREW_USER }}
