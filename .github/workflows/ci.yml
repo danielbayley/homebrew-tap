@@ -15,6 +15,6 @@ on:
 jobs:
   CI:
     uses: danielbayley/homebrew-pipeline/.github/workflows/action.yml@main
-      secrets: inherit
-      with:
-        skip-install: cask,tokens
+    secrets: inherit
+    with:
+      skip-install: cask,tokens
