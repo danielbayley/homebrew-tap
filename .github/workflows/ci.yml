@@ -15,5 +15,4 @@ on:
 jobs:
   CI:
     uses: danielbayley/homebrew-pipeline/.github/workflows/action.yml@main
-    with:
-      secrets: inherit
+    secrets: inherit
