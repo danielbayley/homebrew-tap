@@ -21,4 +21,4 @@ jobs:
     
     steps:
     - name: Additional TEST step
-      run: echo HOMEBREW_USER: ${{ secrets.HOMEBREW_USER }}
+      run: echo "HOMEBREW_USER: ${{ secrets.HOMEBREW_USER }}"
