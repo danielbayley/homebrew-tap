@@ -14,10 +14,7 @@ on:
 
 jobs:
   CI:
-    steps:
-    - run: echo STEP RAN
-    - uses: danielbayley/homebrew-pipeline/.github/workflows/action.yml@main
+    uses: danielbayley/homebrew-pipeline/.github/workflows/action.yml@main
       secrets: inherit
       with:
         skip-install: cask,tokens
-
