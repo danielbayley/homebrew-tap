@@ -13,12 +13,6 @@ on:
   - cron: 0 5 * * * # 5AM daily
 
 jobs:
-  prejob:
-    runs-on: macos-latest
-    steps:
-    - name: Pre job
-      run: echo RAN pre job
-  
   CI:
     uses: danielbayley/homebrew-pipeline/.github/workflows/action.yml@main
     secrets: inherit
