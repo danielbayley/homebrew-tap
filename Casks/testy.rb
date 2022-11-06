@@ -2,7 +2,7 @@ cask "testy" do
   version :latest
   sha256 :no_check
 
-  owner = ENV["HOMEBREW_USER"] #
+  owner = ENV["HOMEBREW_USER"]
   p "owner: #{owner}"
 
   branch = "main"
