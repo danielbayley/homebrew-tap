@@ -1,9 +1,8 @@
 cask "testy" do
   version :latest
   sha256 :no_check
-
-  owner = ENV["HOMEBREW_USER"] #
-  p "owner: #{owner}"
+  
+  pp ENV.filter { |k,| k =~ /^HOMEBREW-(A|B|C)/ }
 
   branch = "main"
   url "https://github.com/#{owner}/homebrew-tap/archive/refs/heads/#{branch}.zip"
