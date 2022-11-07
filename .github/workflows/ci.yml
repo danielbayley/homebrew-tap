@@ -16,5 +16,7 @@ jobs:
   CI:
     uses: danielbayley/homebrew-pipeline/.github/workflows/action.yml@main
     secrets: inherit
+    env:
+      HOMEBREW_USER: ${{ secrets.HOMEBREW_USER }}
     with:
       skip-install: cask,tokens
