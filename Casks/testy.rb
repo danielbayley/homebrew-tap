@@ -7,10 +7,10 @@ cask "testy" do
   p ENV.fetch "HOMEBREW_C"
 
   branch = "main"
-  url "https://github.com/#{owner}/homebrew-tap/archive/refs/heads/#{branch}.zip"
+  url "https://github.com/#{GITHUB_REPOSITORY_OWNER}/homebrew-tap/archive/refs/heads/#{branch}.zip"
   name "Testy"
   desc "Testing"
-  homepage "https://github.com/#{owner}/homebrew-tap"
+  homepage "https://github.com/#{GITHUB_REPOSITORY_OWNER}/homebrew-tap"
 
   stage_only true
 end
