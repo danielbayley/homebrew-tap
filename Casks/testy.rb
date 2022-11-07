@@ -2,7 +2,7 @@ cask "testy" do
   version :latest
   sha256 :no_check
 
-  pp "HOMEBREW_USER:", ENV["HOMEBREW_USER"] || "FAILED"
+  pp "HOMEBREW_USER:", (ENV["HOMEBREW_USER"] || "FAILED")
 
   owner = ENV.fetch "GITHUB_REPOSITORY_OWNER"
   branch = "main"
