@@ -12,8 +12,8 @@ cask "testy" do
   homepage "https://github.com/#{owner}/homebrew-tap"
 
   artifact "README.md", target: "#{Dir.home}/Desktop/README.md"
-  
+
   postflight do
-    File.read "#{Dir.home}/Desktop/README.md"
+    puts File.read "#{Dir.home}/Desktop/README.md"
   end
 end
