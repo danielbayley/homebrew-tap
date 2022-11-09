@@ -11,5 +11,9 @@ cask "testy" do
   desc "Testing"
   homepage "https://github.com/#{owner}/homebrew-tap"
 
-  stage_only true
+  artifact "README.md", target: "#{Dir.home}/Desktop/README.md"
+  
+  postflight do
+    File.read "#{Dir.home}/Desktop/README.md"
+  end
 end
